@@ -1,0 +1,179 @@
+<!--
+*********************************
+ Subject:  CGD 200/210: Dreamweaver I/II (Winter 2024)
+ Author: Edilvan E. Falcon
+ Instructor: David Kazaryan
+ Date Created: 2024.01.06
+ Description: Assignment No. 1
+ - Create a simple html page with the following elements: h1, h2, p, img, ul, li.
+Topic: Introduce yourself and mention recommended places to visit like local coffee shops, countries you've visited, or restaurants you recommend.
+ ********************************
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 1: Introduce Yourself</title>
+
+    <style>
+      /* using external font */
+      @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600&display=swap");
+
+      /* using local font */
+      @font-face {
+        font-family: BreeSerif;
+        /* src: url("assets/fonts/Great_Vibes/GreatVibes-Regular.ttf");*/
+        src: url("Assets/fonts/Bree_Serif/BreeSerif-Regular.ttf");
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        /* font-family: "GreatVibes"; */
+        font-family: "Rajdhani", sans-serif;
+        font-size: 18px;
+      }
+
+      #main {
+        /* border: solid 1px #ff0000; 
+        margin: 0px 10px 10px 10px; */
+      }
+
+      #about-me {
+        margin: 5px 5px 5px 0px;
+        border-top: solid 3px #5a189a;
+        border-bottom: solid 3px #5a189a;
+        padding: 10px;
+      }
+
+      #about-me-img {
+       height: 550px;
+       margin-left: 5px;
+       border: solid 3px #5a189a;
+       padding: 3px; ;
+      }
+
+      p {
+        margin: 20px 5px 5px 5px;
+        vertical-align: top;
+        margin-bottom: 0px;
+        clear: both;
+      }
+
+      h1 {
+        font-family: "BreeSerif";
+        font-size: 50px;
+        text-align: center;
+        padding: 0px;
+        margin: 0px 0px 10px 0px;
+      }
+
+      .field-value {
+        font-weight: bold;
+      }
+
+      #footer {
+        font-size: 14px;
+        font-family: "BreeSerif";
+        margin: auto;
+        padding: 20px;
+        text-align: center;
+        background-color: #f1faee;
+        border: solid 1px #a8dadc;
+        border-left: 0px;
+        border-right: 0px;
+      }
+
+      a { 
+        text-decoration: none;
+        font-weight: bold;
+        color:rgb(3, 106, 6);
+  
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      a.travel {color: orangered; }
+      a.food {color: #9e2a2b; }
+
+      .bot-img { height: 150px; cursor: pointer; }
+
+    </style>
+  </head>
+  <body>
+    <!-- main container -->
+    <div id="main">
+      <!-- header -->
+      <h1>All about me, Hello World!</h1>
+      <!-- main content -->
+      <div>
+        <table
+          border="0"
+          cellpadding="0"
+          cellspacing="0"
+          style="margin: 0px; padding: 0px"
+        >
+          <tr>
+            <td>
+              <img src="assets/images/image-02.jpg" id="about-me-img" />
+            </td>
+            <td style="vertical-align: top">
+              <div>
+                <ul style="margin-left: 30px">
+                  <li>My Name: <span class="field-value">Edilvan</span></li>
+                  <li>My Nickname: <span class="field-value">Van</span></li>
+                </ul>
+              </div>
+
+              <div style="margin: 10px 0px 0px 15px">
+                <span style="font-weight: bold">My Hobbies:</span>
+                <ol style="margin-left: 50px; margin-top: 10px">
+                  <li>Eating :)</li>
+                  <li>Taking photos</li>
+                  <li>Playing Badminton</li>
+                </ol>
+              </div>
+
+              <div id="about-me">
+                <p>
+                  Hey there, I'm Van, excited to share a bit about myself and some places that have left a lasting impression on my journeys. 
+                  </p>
+                  
+                  <p>
+                  If you're seeking a familiar yet comforting experience, <a href="https://www.starbucks.com/" target="_blank"> Starbucks coffee</a> shops are a reliable go-to for a perfect cup of joe and a cozy ambiance. 
+                  In my travels, <a class="travel" href="https://denmark.dk/" target="_blank"> Denmark's</a> charm stole my heart with its picturesque landscapes and the historic beauty of places like Nyhavn in Copenhagen.
+                  <a class="travel" href="https://vietnam.travel/" target="_blank">Vietnam's</a> vibrant culture and bustling cities like Hanoi offer an exhilarating blend of tradition and modernity. 
+                  </p>
+                  
+                 <p>
+                  Now, when it comes to dining, <a class="food" href="https://fogodechao.com/" target="_blank"> Fogo de Chao's</a> Brazilian churrasco experience is an absolute must for carnivores—it's an adventure for the taste buds! 
+                  And if you're in the mood for a culinary masterpiece, <a  class="food"  href="https://alexanderssteakhouse.com/pasadena/" target="_blank"> Alexander's Steakhouse</a> presents an exquisite fusion of flavors that'll linger in your memory long after the last bite. 
+                  
+                  From sipping coffee at a familiar spot to delving into diverse cultures and cuisines, the world is brimming with incredible places waiting to be explored!
+                  </p>
+              </div>
+              
+              <div style="margin-left:15px; margin-top:5px;">
+                <img src="assets/images/denmark.jpg" class="bot-img" title="Travel to Denmark"/>
+                <img src="assets/images/vietnam.jpg" class="bot-img"  title="Travel to  Vietnam" />
+                <img src="assets/images/fogo.jpg" class="bot-img" title="Eat in Fogo de Chao" />
+                <img src="assets/images/steak.jpg" class="bot-img"  title="Eat in Alexander's Steakhouse" />
+                <img src="assets/images/coffee.jpg" class="bot-img" title="Buy Coffee in Starbucks" />
+              </div>
+              <div>
+               
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!-- footer -->
+      <div id="footer">EEF &copy; | CGD 200 - Winter 2024</div>
+    </div>
+  </body>
+</html>

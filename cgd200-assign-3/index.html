@@ -1,0 +1,366 @@
+<!--
+*********************************
+ Subject:  CGD 200/210: Dreamweaver I/II (Winter 2024)
+ Author: Edilvan E. Falcon
+ Instructor: David Kazaryan
+ Date Created: 2024.01.06
+ Description: Assignment 3
+ - Create a web page with a list of recommended TV shows and/or movies.
+ ********************************
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 3: Movies & TV Series</title>
+    <link rel="stylesheet" href="assets/styles/main-style.css" />
+  </head>
+  <body>
+    <!-- main container -->
+    <div id="main">
+      <!-- header -->
+      <div id="top-content">Van's Top Movies & Series 2024</div>
+      <!-- main content -->
+      <div>
+        <div>
+          <!-- top movies -->
+          <div class="nav-title">Top Movies</div>
+          <div class="acc-wraper">
+            <div class="accordion">
+              <div>
+                <a href="#john-wick">
+                  <img
+                    src="assets/images/movies/john-wick4.jpg"
+                    alt="John Wick 4"
+                    title="John Wick 4"
+                /></a>
+              </div>
+
+              <div>
+                <a href="#mario">
+                  <img
+                    src="assets/images/movies/mario.jpg"
+                    alt="Mario Movies"
+                    title="Mario Movies"
+                /></a>
+              </div>
+              
+              <div>
+                <a href="#taken">
+                  <img
+                    src="assets/images/movies/taken-3.jpeg"
+                    alt="Taken 3"
+                    title="Taken 3"
+                /></a>
+              </div>
+
+              <div>
+                <a href="#3idiots"
+                  ><img
+                    src="assets/images/movies/3-idots.jpg"
+                    alt="3 Idiots"
+                    title="3 idiots"
+                /></a>
+              </div>
+              
+            </div>
+          </div>
+          <!-- end: top movies -->
+
+          <!-- top tv series -->
+          <div class="nav-title">Top TV Series</div>
+          <div class="acc-wraper">
+            <div class="accordion">
+
+              <div>
+                <a href="#scorpion">
+                  <img
+                    src="assets/images/tv-series/scorpion.jpg"
+                    alt="Scorpion"
+                    title="Scorpion"
+                /></a>
+              </div>
+
+              <div>
+                <a href="#money-heist">
+                  <img
+                    src="assets/images/tv-series/money-heist.jpg"
+                    alt="Money Heist"
+                    title="Money Heist"
+                /></a>
+              </div>
+              
+              <div>
+                <a href="#the-100">
+                  <img
+                    src="assets/images/tv-series/the-100.jpg"
+                    alt="The 100"
+                    title="the 100"
+                /></a>
+              </div>
+              
+              <div>
+                <a href="#suits">
+                  <img src="assets/images/tv-series/suits.jpg" alt="Suits"
+                /></a>
+              </div>
+              
+            </div>
+          </div>
+          <!-- end: top tv series -->
+
+          <!-- main content -->
+          <div class="main-details-cont">
+          
+             <!-- details -->
+             <div id="john-wick" class="details">
+              <img src="assets/images/movies/john-wick4.jpg" />
+              <span class="top-subtitle">Top Movies</span>
+              <h3>John Wick: Chapter 4</h3>
+              <p>
+                John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, Wick must face off against a new enemy with powerful alliances across the globe and forces that turn old friends into foes.
+              </p>
+
+              <span class="category">Action</span>
+              <span class="category">Crime</span>
+              <span class="category">Thriller</span>
+
+              <div class="details-prod">
+                <span class="title">Director:</span>
+                <span class="values">Chad Stahelski</span>
+              </div>
+              <div class="details-prod">
+                <span class="title">Runtime: </span>
+                <span class="values">2 hours 49 minutes</span>
+              </div>
+
+              <div class="break"></div>
+              <a href="#"
+                ><span data-attr="Back to ">Back to </span
+                ><span data-attr="TOP ⇧">TOP ⇧</span></a
+              >
+              <div class="break"></div>
+            </div>
+            <!-- end: details -->
+
+            <!-- details -->
+            <div id="mario" class="details">
+              <img src="assets/images/movies/mario.jpg" />
+              <span class="top-subtitle">Top Movies</span>
+              <h3>The Super Mario Bros. Movie</h3>
+              <p>
+                A plumber named Mario travels through an underground labyrinth with his brother Luigi, trying to save a captured princess.
+              </p>
+
+              <span class="category">Animation</span>
+              <span class="category">Adventure</span>
+              <span class="category">Comedy</span>
+
+              <div class="details-prod">
+                <span class="title">Director:</span>
+                <span class="values">Aaron Horvath, Michael Jelenic, Pierre Leduc</span>
+              </div>
+              <div class="details-prod">
+                <span class="title">Runtime: </span>
+                <span class="values">1 hour 32 minutes</span>
+              </div>
+
+              <div class="break"></div>
+              <a href="#"
+                ><span data-attr="Back to ">Back to </span
+                ><span data-attr="TOP ⇧">TOP ⇧</span></a
+              >
+              <div class="break"></div>
+            </div>
+            <!-- end: details -->
+
+            <!-- details -->
+            <div id="taken" class="details">
+              <img src="assets/images/movies/taken-3.jpeg" />
+              <span class="top-subtitle">Top Movies</span>
+              <h3>Taken 3</h3>
+              <p>
+                Accused of a ruthless murder he never committed or witnessed, Bryan Mills goes on the run and brings out his particular set of skills to find the true killer and clear his name.
+              </p>
+
+              <span class="category">Action</span>
+              <span class="category">Adventure</span>
+              <span class="category">Crime</span>
+
+              <div class="details-prod">
+                <span class="title">Director:</span>
+                <span class="values">Olivier Megaton</span>
+              </div>
+              <div class="details-prod">
+                <span class="title">Runtime: </span>
+                <span class="values">1 hour 48 minutes</span>
+              </div>
+
+              <div class="break"></div>
+              <a href="#"
+                ><span data-attr="Back to ">Back to </span
+                ><span data-attr="TOP ⇧">TOP ⇧</span></a
+              >
+              <div class="break"></div>
+            </div>
+            <!-- end: details -->
+
+            <!-- details -->
+            <div id="3idiots" class="details">
+              <img src="assets/images/movies/3-idots.jpg" />
+              <span class="top-subtitle">Top Movies</span>
+              <h3>3 Idiots</h3>
+              <p>
+                Two friends are searching for their long lost companion. They
+                revisit their college days and recall the memories of their
+                friend who inspired them to think differently, even as the rest
+                of the world called them "idiots".
+              </p>
+
+              <span class="category">Comedy</span>
+              <span class="category">Drama</span>
+
+              <div class="details-prod">
+                <span class="title">Director:</span>
+                <span class="values">Rajkumar Hirani</span>
+              </div>
+              <div class="details-prod">
+                <span class="title">Runtime: </span>
+                <span class="values">2 hours 50 minutes</span>
+              </div>
+              <div class="break"></div>
+              <a href="#"
+                ><span data-attr="Back to ">Back to </span
+                ><span data-attr="TOP ⇧">TOP ⇧</span></a
+              >
+              <div class="break"></div>
+            </div>
+            <!-- end: details -->
+
+            <!-- TV Series
+            =================================================================
+            -->
+            
+
+            <!-- details -->
+            <div id="scorpion" class="details">
+              <img src="assets/images/tv-series/scorpion.jpg" />
+              <span class="top-subtitle">Top TV Series</span>
+              <h3>Scorpion</h3>
+              <p>
+                An eccentric genius forms an international network of
+                super-geniuses to act as the last line of defense against the
+                complicated threats of the modern world.
+              </p>
+
+              <span class="category">Action</span>
+              <span class="category">Crime</span>
+              <span class="category">Drama</span>
+
+              <div class="details-prod">
+                <span class="title">Creator:</span>
+                <span class="values">Nick Santora</span>
+              </div>
+
+              <div class="break"></div>
+              <a href="#"
+                ><span data-attr="Back to ">Back to </span
+                ><span data-attr="TOP ⇧">TOP ⇧</span></a
+              >
+              <div class="break"></div>
+            </div>
+            <!-- end: details -->
+
+            <!-- details -->
+            <div id="money-heist" class="details">
+              <img src="assets/images/tv-series/money-heist.jpg" />
+              <span class="top-subtitle">Top TV Series</span>
+              <h3>Money Heist</h3>
+              <p>
+                An unusual group of robbers attempt to carry out the most
+                perfect robbery in Spanish history - stealing 2.4 billion euros
+                from the Royal Mint of Spain.
+              </p>
+
+              <span class="category">Action</span>
+              <span class="category">Crime</span>
+              <span class="category">Drama</span>
+
+              <div class="details-prod">
+                <span class="title">Creator:</span>
+                <span class="values">Álex Pina</span>
+              </div>
+
+              <div class="break"></div>
+              <a href="#"
+                ><span data-attr="Back to ">Back to </span
+                ><span data-attr="TOP ⇧">TOP ⇧</span></a
+              >
+              <div class="break"></div>
+            </div>
+            <!-- end: details -->
+
+            <!-- details -->
+            <div id="the-100" class="details">
+              <img src="assets/images/tv-series/the-100.jpg" />
+              <span class="top-subtitle">Top TV Series</span>
+              <h3>The 100</h3>
+              <p>
+                Set 97 years after a nuclear war destroyed civilization, when a
+                spaceship housing humanity's lone survivors sends 100 juvenile
+                delinquents back to Earth, hoping to repopulate the planet.
+              </p>
+
+              <span class="category">Drama</span>
+              <span class="category">Mystery</span>
+              <span class="category">Sci-Fi</span>
+
+              <div class="details-prod">
+                <span class="title">Creator:</span>
+                <span class="values">Patty Jenkins</span>
+              </div>
+
+              <div class="break"></div>
+              <a href="#"
+                ><span data-attr="Back to ">Back to </span
+                ><span data-attr="TOP ⇧">TOP ⇧</span></a
+              >
+              <div class="break"></div>
+            </div>
+            <!-- end: details -->
+
+            
+
+            <!-- details -->
+            <div id="suits" class="details">
+              <img src="assets/images/tv-series/suits.jpg" />
+              <span class="top-subtitle">Top TV Series</span>
+              <h3>Suits</h3>
+              <p>
+                On the run from a drug deal gone bad, brilliant college dropout Mike Ross finds himself working with Harvey Specter, one of New York City's best lawyers.
+              </p>
+
+              <span class="category">Comedy</span>
+              <span class="category">Drama</span>
+
+              <div class="break"></div>
+              <a href="#"
+                ><span data-attr="Back to ">Back to </span
+                ><span data-attr="TOP ⇧">TOP ⇧</span></a
+              >
+              <div class="break"></div>
+            </div>
+            <!-- end: details -->
+
+            
+          </div>
+          
+        </div>
+        <!-- footer -->
+        <div id="footer">&copy; EEF | CGD200 - Winter 2024</div>
+      </div>
+    </div>
+  </body>
+</html>

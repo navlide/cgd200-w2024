@@ -1,0 +1,124 @@
+/*
+*********************************
+ Subject:  CGD 200/210: Dreamweaver I/II (Winter 2024)
+ Author: Edilvan E. Falcon
+ Instructor: David Kazaryan
+ Date Created: 2024.01.06
+ Description: Final Assignment
+ - Homepage for Assignments
+ ********************************
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Satisfy&display=swap');
+
+$Ghost-white: #fffaff;
+$jet: #0076d6;
+$cyan: #30bced;
+$bg-color: #f0e5e2;
+$hdr-clr: #ffd24a;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  
+  
+  background-color: $bg-color;
+}
+h1 {
+  font-family: 'Abril Fatface', serif;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  color: $hdr-clr;
+  height: 100px;
+  
+}
+
+.list-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 150px);
+  ul {
+    list-style-type: none;
+    width: 700px;
+    li {
+      background-color: $Ghost-white;
+      padding: 20px;
+      margin-bottom: 60px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      &:hover {
+        animation: float 1s infinite alternate;
+      }
+
+      &:nth-child(odd) {
+        a {
+          img {
+            left: 0;
+          }
+          div {
+            grid-column: 2/3;
+            text-align: right;
+          }
+
+          
+        }
+      }
+      a {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+        text-decoration: none;
+        color: #0498b9;
+        img {
+          width: 150px;
+          height: 150px;
+          object-fit: cover;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          border-radius: 10px;
+        
+        }
+
+        p { font-size:18px; }
+
+        h2 { font-family: 'Abril Fatface', serif; }
+        
+      }
+    }
+  }
+}
+
+@keyframes float {
+  from {
+    transform: translateY(0) scale(100%);
+  }
+  to {
+    transform: translateY(-10px) scale(102%);
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
+  }
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -999;
+}
+
+#content {
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #b90505;
+
+  width: 100%;
+  padding: 20px;
+}

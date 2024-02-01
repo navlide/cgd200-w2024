@@ -1,0 +1,252 @@
+/*
+*********************************
+ Subject:  CGD 200/210: Dreamweaver I/II (Winter 2024)
+ Author: Edilvan E. Falcon
+ Instructor: David Kazaryan
+ Date Created: 2024.01.06
+ Description: Assignment 3
+ - Create a web page with a list of recommended TV shows and/or movies.
+ ********************************
+*/
+ 
+ /* using external font */
+ @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600&display=swap");
+ @import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@900&display=swap');
+/* font-family: 'Ultra', serif; */
+
+
+ html {
+   scroll-behavior: smooth;
+   margin: 0px;
+   padding: 0px;
+ }
+
+ * {
+   margin: 0;
+   padding: 0;
+   font-family: "Rajdhani", sans-serif;
+   font-size: 18px;
+ }
+
+ #main {
+    background-color: #eee;
+ }
+
+ #top-content { 
+  font-family: 'Sansita Swashed', system-ui;
+    font-size: 40px; text-align: center; 
+    font-weight: bolder; width: 100%; 
+    background-color:#fca522;
+    /*position:fixed; 
+    top: 0; */
+    margin-top:0;
+    z-index: 99999;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+}
+
+.nav-title { margin: 20px auto;
+  width: 700px;
+  border-top: solid 5px #ffb200;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Sansita Swashed', system-ui;
+  color: #e06100;
+}
+
+ .acc-wraper {
+   margin:10px auto;
+   width: 600px;
+ }
+
+ .accordion {
+   display: flex;
+   flex-wrap: nowrap;
+   width: 100%;
+   height: 300px;
+ }
+
+ .accordion > div {
+   /*  width:50%; */
+   flex-grow: 1;
+   flex-shrink: 1;
+   overflow: hidden;
+   transition: all 0.5s ease;
+   border: 5px solid #eee;
+   border-radius: 30px;
+   position: relative;
+   margin: 0 5px 0 5px;
+   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+ }
+
+ .accordion > div:hover {
+   flex-shrink: 0;
+   transition: all 0.2s ease;
+   cursor: pointer;
+ }
+
+ .accordion div img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   /* object-fit:scale-down; */
+ }
+
+ .main-details-cont {
+   margin-top: 100px;
+ }
+
+ .details {
+   width: 800px;
+   margin: auto;
+   text-align: justify;
+   margin-bottom: 20px;
+   border-bottom: solid 5px #ffb200;
+   border-top: solid 5px #ffb200;
+   border-radius: 10px 10px 10px 0px;
+   padding: 10px 5px 0px 5px;
+ }
+
+ .details img {
+   width: 400px;
+   float: left;
+   margin-right: 5px;
+   border-radius: 10px;
+ }
+
+ .details h3 {
+   font-size: 40px;
+   text-transform: uppercase;
+ }
+
+ .details p {
+   margin-bottom: 10px;
+ }
+
+ .top-subtitle { padding: 5px 20px 5px 20px;
+  border-radius: 5px;
+  margin: 3px 0px 3px 0px;
+  display: inline-block;
+  background-color: #fb6459;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold; 
+  text-align: center;
+  text-transform: uppercase;
+}
+
+ .details .category {
+   padding: 10px;
+   border-radius: 5px;
+   margin: 3px 0px 3px 0px;
+   display: inline-block;
+   background-color: #fa612a;
+   color: #fff;
+   font-size: 14px;
+   font-weight: bold;
+ }
+
+ .details .details-prod:first-of-type {
+   margin-top: 10px;
+ }
+
+ .details .details-prod .title {
+   font-weight: bold;
+ }
+
+ .break {
+   clear: both;
+   min-height: 10px;
+ }
+
+ #content-bottom {width: 1200px; text-align: justify; margin: 10px auto; }
+ #content-bottom p { margin-bottom: 30px; }
+
+ #footer {
+   font-size: 14px;
+   margin: auto;
+   padding: 20px;
+   text-align: center;
+   background-color: #f8eeca;
+   border: solid 1px #f1a944;
+   border-left: 0px;
+   border-right: 0px;
+ }
+
+ /* hover effect */
+ a {
+   text-decoration: none;
+   text-transform: uppercase;
+   font-size: 30px;
+ }
+ a span {
+   padding: 15px;
+   transition: 0.5s;
+   position: relative;
+ }
+ a span:nth-child(1) {
+   color: #fff;
+   background: #262626;
+ }
+ a span:nth-child(2) {
+   color: #fff;
+   background: #fb6459;
+ }
+ a span:nth-child(1):before {
+   content: attr(data-attr);
+   position: absolute;
+   top: 0;
+   left: 0;
+   background: #ffb200;
+   padding: 15px;
+   transition: 0.5s;
+   transform-origin: top;
+   transform: rotateX(90deg) translateY(-50%);
+ }
+ a:hover span:nth-child(1):before {
+   transform: rotateX(0deg) translateY(0%);
+ }
+ a span:nth-child(2):before {
+   content: attr(data-attr);
+   position: absolute;
+   top: 0;
+   left: 0;
+   background: #262626;
+   padding: 15px;
+   transition: 0.5s;
+   transform-origin: bottom;
+   transform: rotateX(90deg) translateY(50%);
+ }
+ a:hover span:nth-child(2):before {
+   transform: rotateX(0deg) translateY(0%);
+ }
+ a span:nth-child(1):after {
+   content: attr(data-attr);
+   padding: 15px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background: #262626;
+   transform-origin: bottom;
+   transform: rotateX(0deg) translateY(0%);
+   transition: 0.5s;
+ }
+ a:hover span:nth-child(1):after {
+   transform: rotateX(90deg) translateY(50%);
+ }
+ a span:nth-child(2):after {
+   content: attr(data-attr);
+   position: absolute;
+   top: 0;
+   left: 0;
+   background: #ffb200;
+   padding: 15px;
+   transition: 0.5s;
+   transform-origin: top;
+   transform: rotateX(0deg) translateY(0%);
+ }
+ a:hover span:nth-child(2):after {
+   transform: rotateX(90deg) translateY(-50%);
+ }
+ /* end: hover effect */

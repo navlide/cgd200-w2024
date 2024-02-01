@@ -1,0 +1,182 @@
+/* 
+*********************************
+ Subject:  CGD 200/210: Dreamweaver I/II (Winter 2024)
+ Author: Edilvan E. Falcon
+ Instructor: David Kazaryan
+ Date Created: 2024.01.06
+ Description: Assignment No. 1
+ - Logo animation
+ ******************************** 
+ */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Monoton&family=Shrikhand&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #601a01;
+}
+
+body header {
+  padding: 20px;
+  background-color: rgb(45, 19, 0);
+}
+
+body header .neon {
+  position: relative;
+  z-index: 1002;
+  font-size: 0.3em;
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  body header .neon {
+    padding: 5px;
+    font-size: 0.2em;
+  }
+}
+body .neon {
+  font-family: "Monoton", sans-serif;
+}
+
+body .neon h1, h2, h3 {
+  font-weight: normal;
+  font-size: 5em;
+  text-align: center;
+  width: 100%;
+  color: rgb(252, 249, 255);
+  animation: flicker 5s infinite linear;
+  text-shadow: 0 0 10px rgb(213, 47, 255);
+}
+
+h1 {
+  line-height: 0.7em;
+}
+
+h1 span.star {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 0.5em;
+}
+
+h2, h3 {
+  font-family: "Shrikhand", serif;
+}
+
+.welcome-banner {
+  border: solid 5px #fff;
+  width: 700px;
+  margin: 100px auto;
+  padding: 30px;
+  border-radius: 30px;
+  background-color: #b63303;
+}
+
+h3 {
+  font-size: 6em;
+}
+
+body .neon h1 span {
+  animation: flicker 3s infinite linear;
+}
+
+body .neon h2 span {
+  animation: flicker 4s infinite linear;
+}
+
+body .marquee {
+  color: #000;
+  background-color: #fff;
+  width: 600px;
+  margin: auto;
+  overflow: hidden;
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+body .marquee h1 {
+  position: relative;
+  text-transform: uppercase;
+  color: #b80505;
+  font-family: Arial, Helvetica, sans-serif;
+  animation: marquee 5s infinite linear;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  1% {
+    opacity: 0.5;
+  }
+  2% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 1;
+  }
+  16% {
+    opacity: 0;
+  }
+  17% {
+    opacity: 1;
+  }
+  21% {
+    opacity: 1;
+  }
+  22% {
+    opacity: 0.5;
+  }
+  23% {
+    opacity: 1;
+  }
+  76% {
+    opacity: 1;
+  }
+  77% {
+    opacity: 0.5;
+  }
+  78% {
+    opacity: 1;
+  }
+  96% {
+    opacity: 1;
+  }
+  97% {
+    opacity: 0.5;
+  }
+  98% {
+    opacity: 1;
+  }
+}
+@keyframes marquee {
+  from {
+    left: -250px;
+  }
+  to {
+    left: 580px;
+  }
+}
+@keyframes slide-up {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-250px);
+  }
+  60% {
+    transform: translateY(-250px);
+  }
+  70% {
+    transform: translateY(-500px);
+  }
+  90% {
+    transform: translateY(-500px);
+  }
+} /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,115 @@
+<!--
+*********************************
+ Subject:  CGD 200/210: Dreamweaver I/II (Winter 2024)
+ Author: Edilvan E. Falcon
+ Instructor: David Kazaryan
+ Date Created: 2024.01.15
+ Description: Assignment No. 2
+ - Add CSS styles to assignment 1 such as:
+Centered elements with auto margins or text-align. Also look up CSS Grid and Flex if you want to go further. justify-content: center
+Add images as img tags and background images to understand the difference.
+Include inline, internal, and external CSS to show that you understand the difference.
+ ********************************
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/styles/main.css" rel="stylesheet" type="text/css" />
+    <title>Assignment 2: Introduce Yourself Vesrsion 2</title>
+
+    <style>
+     
+
+    </style>
+  </head>
+  <body>
+    <!-- main container -->
+    <div id="main">
+      <!-- header -->
+      <h1>All about me, Hello World!</h1>
+      <!-- main content -->
+      <div>
+        <table
+          border="0"
+          cellpadding="0"
+          cellspacing="0"
+          style="margin: 0px; padding: 0px"
+        >
+          <tr>
+            <td>
+              <img src="assets/images/image-02.jpg" id="about-me-img" />
+            </td>
+            <td style="vertical-align: top">
+              <div>
+                <ul style="margin-left: 30px">
+                  <li>My Name: <span class="field-value">Edilvan</span></li>
+                  <li>My Nickname: <span class="field-value">Van</span></li>
+                </ul>
+              </div>
+
+              <!-- <div style="margin: 10px 0px 0px 15px">
+                <span style="font-weight: bold">My Hobbies:</span>
+                <ol style="margin-left: 50px; margin-top: 10px">
+                  <li>Eating :)</li>
+                  <li>Taking photos</li>
+                  <li>Playing Badminton</li>
+                </ol>
+              </div> -->
+
+              <div id="about-me">
+                <p>
+                  Hey there, I'm Van, excited to share a bit about myself and some places that have left a lasting impression on my journeys. 
+                  </p>
+                  
+                  <p>
+                  If you're seeking a familiar yet comforting experience, <a href="https://www.starbucks.com/" target="_blank"> Starbucks coffee</a> shops are a reliable go-to for a perfect cup of joe and a cozy ambiance. 
+                  In my travels, <a class="travel" href="https://denmark.dk/" target="_blank"> Denmark's</a> charm stole my heart with its picturesque landscapes and the historic beauty of places like Nyhavn in Copenhagen.
+                  <a class="travel" href="https://vietnam.travel/" target="_blank">Vietnam's</a> vibrant culture and bustling cities like Hanoi offer an exhilarating blend of tradition and modernity. 
+                  </p>
+                  
+                 <p>
+                  Now, when it comes to dining, <a class="food" href="https://fogodechao.com/" target="_blank"> Fogo de Chao's</a> Brazilian churrasco experience is an absolute must for carnivores—it's an adventure for the taste buds! 
+                  And if you're in the mood for a culinary masterpiece, <a  class="food"  href="https://alexanderssteakhouse.com/pasadena/" target="_blank"> Alexander's Steakhouse</a> presents an exquisite fusion of flavors that'll linger in your memory long after the last bite. 
+                  
+                  From sipping coffee at a familiar spot to delving into diverse cultures and cuisines, the world is brimming with incredible places waiting to be explored!
+                  </p>
+              </div>
+              
+             
+
+              
+            </td>
+          </tr>
+        </table>
+
+        <!-- improvement added: 01.15.2023  
+        ************************************ 
+        -->
+        <div class="section-content" style="">
+          <span>MY HOBBIES:</span>
+          <ul>
+            <li>
+              <span>Playing Badminton with friends</span>
+              <img src="assets/images/v2/badminton.jpg" alt="Playing Badminton with friends" />
+            </li>
+            <li>
+              <span>Eating food everywhere</span>
+              <img src="assets/images/v2/eating.jpg" alt="Eating food everywhere" />
+            </li>
+            <li>
+              <span>Traveling anywhere</span>
+              <img src="assets/images/v2/travel.jpg" alt="Traveling anywhere" />
+            </li>
+          </ul>
+        </div> <!-- improvement ended: -->
+
+      </div>
+      <!-- footer -->
+      <div id="footer">EEF &copy; | CGD 200 - Winter 2024</div>
+    </div>
+  </body>
+</html>
